@@ -60,12 +60,7 @@
                 {{ end }}
             </a>
 
-            {{ if not (.Site.Params.navbar.disableSearch | default false) }}
-                <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='{{ .Site.Params.navbar.searchPlaceholder | default "Ctrl + k to Search..."}}'
-                        aria-label="Search" oninput="searchOnChange(event)">
-                </div>
-            {{ end }}
+
 
             <!-- navbar toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -139,34 +134,16 @@
                     </li>
                     {{ end }}
 
-                    <!-- custom menus from the user -->
-                    {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
-                    <!-- Dropdown menu -->
-                    <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{ .URL }}" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{ .Title }}">
-                            {{ .Name }}
-                        </a>
-                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
-                            {{ range .Children }}
-                            <a class="dropdown-item text-center nav-link" href="{{ .URL }}"
-                                title="{{ .Title }}">
-                                {{ .Name }}
-                            </a>
-                            {{ end }}
-                        </div>
-                    </li>
-                    {{else}}
-                    <!-- Single menu item -->
+                    {{ if and (.Site.Params.gallery.enable | default false) (not (.Site.Params.navbar.menus.disableContact | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{.URL}}" title="{{ .Title }}">
-                            {{ .Pre }}
-                            {{ .Name }}
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#gallery"
+                            aria-label="gallery">
+                            {{ .Site.Params.gallery.title | default "Gallery" }}
                         </a>
                     </li>
-                    {{end}}
-                    {{end}}
+                    {{ end }}
+
+
 
                     {{ if (not .Site.Params.theme.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">

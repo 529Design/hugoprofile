@@ -22,9 +22,9 @@
                             </div>
                         </form>
                     </div>
-                    {{ else if .Site.Params.contact.email }}
+                    {{ else if .Site.Params.contact.link }}
                     <div class="text-center pt-3">
-                        <a href="mailto:{{ .Site.Params.contact.email }}" class="btn">
+                        <a href="{{ .Site.Params.hero.button.url }}" class="btn">
                             {{ .Site.Params.contact.btnName | default "Get in Touch" }}
                         </a>
                     </div>
