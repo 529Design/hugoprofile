@@ -218,18 +218,18 @@ params:
         
         content: |
         
-        I am currently working as a solutions engineer at [Storable](https://www.storable.com). I specialize in writing complex SQL queries and procedures for Postgres and MSSQL.  
-
-        Develop Custom Solutions for Customers and Internal Teams
-
-
-        - Write performant SQL queries, scripts, and stored procedures using MSSQL, Postgres, and MySql
-        - Develop and maintain internal scripts and automation tools
-        - Gather requirements through communication with clients as well as internal teams
-        - Perform independent research and create detailed documentation
+        "I am currently working as a solutions engineer at [Storable](https://www.storable.com). I develop custom solutions for customers and internal teams and specialize in writing complex SQL queries and procedures for Postgres and MSSQL.  "
+        
+          "- Write performant SQL queries, scripts, and stored procedures using MSSQL, Postgres, and MySql"
+        
+          "- Develop and maintain internal scripts and automation tools"
+        
+         "- Gather requirements through communication with clients as well as internal teams"
+          
+          "- Perform independent research and create detailed documentation"
 
         
-        Recently developed an AI Chatbot POC that executes API actions based on semantic input and its RAGS
+        "Recently developed an AI Chatbot POC that executes API actions based on semantic input and its RAGS"
 
       - job: "Systems Engineer"
         company: "CBHC"
