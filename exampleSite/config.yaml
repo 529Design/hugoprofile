@@ -216,16 +216,20 @@ params:
          # name: "View the project"
         #  url: "https://example.com"
         
-        content: "I am currently working as a solutions engineer at [Storable](https://www.storable.com). I specialize in writing complex SQL queries and procedures for Postgres and MSSQL.  
+        content: |
+        
+        I am currently working as a solutions engineer at [Storable](https://www.storable.com). I specialize in writing complex SQL queries and procedures for Postgres and MSSQL.  
 
         Develop Custom Solutions for Customers and Internal Teams
+
 
         - Write performant SQL queries, scripts, and stored procedures using MSSQL, Postgres, and MySql
         - Develop and maintain internal scripts and automation tools
         - Gather requirements through communication with clients as well as internal teams
         - Perform independent research and create detailed documentation
+
         
-        Recently developed an AI Chatbot POC that executes API actions based on semantic input and its RAGS"
+        Recently developed an AI Chatbot POC that executes API actions based on semantic input and its RAGS
 
       - job: "Systems Engineer"
         company: "CBHC"
